@@ -26,6 +26,14 @@ h1:hover{
     
 
 }
+.seccion1{
+    transition: all 2s;
+}
+
+.seccion1:hover{
+    background-color: black;
+    color: gold;
+}
 
 body{
     background: linear-gradient(black,silver);
