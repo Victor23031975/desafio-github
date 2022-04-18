@@ -1,20 +1,18 @@
-*{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-}
+        
 
 
 header{
-    background-image:url(../assets/imagenes/pared.png);
-    background-color: silver;
+
+    background-color: black;
     text-align: center; 
     
 }
 h1{
     
-    font-size: 60px;
-    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    color: red;
     text-align: center;
     transition: all 2s;
     
@@ -36,88 +34,49 @@ h1:hover{
 }
 
 body{
-    background: linear-gradient(black,silver);
+    background:black;
     
 }
 
-/** INICIO GRID **/
-
-.contenedor{
-    max-width: 95%;
-    height: 90vw;
-    margin:2rem;
-    gap:1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header header"
-    "nav nav "
-    "main aside"
-    "footer footer"
-   
-}
-
-.header{
-
-    grid-area: header;
-}
-.nav{
-    background-image:url(../assets/imagenes/pared.png);
-    grid-area: nav;
-}
-.main{
-
-    grid-area:main ;
-    
-}
-.aside{
-
-    grid-area: aside;
-    
-
-}
 .footer{
-    grid-area: footer ;
-    background-image: url(../assets/imagenes/pared.png);
+    margin-top: 30px;
+    height: 50px;
+    background-color: rgb(46, 44, 44);
+    text-align: center;
+    
 }
 
-
-
-
-.seccion1{
-    background: linear-gradient(black,silver);
-    width: 1000px;
-    height: 500px;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    line-height: 3rem;
-    color: white;
-    overflow: scroll;   
-    flex-direction: row;
-
+.bi-facebook{
+    color: red;
+    
 }
-.seccion1:hover{
-
-    transform: scale (50px,50px);
-}
-.seccion2 img{
-    width: 450px;
-    height: 500px;
-
+.bi-facebook:hover{
+    color: gold;
+    
 }
 
+.bi-instagram{
+    color: red;
 }
+.bi-instagram:hover{
+    color: gold;
+}
+.bi-twitter{
+    color: red;
+}
+.bi-twitter:hover{
+    color: gold;
+}
+
 nav{
     padding: 20px;
 }
 nav ul{
     list-style: none;
-    background-color:silver;
+    background-color:rgb(46, 44, 44);
     height: 60px;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
 }
@@ -125,6 +84,7 @@ nav li a{
     color: red;
     text-decoration: none;
     padding: .5rem 1rem;
+    
 }
 
 ul ul{
@@ -134,35 +94,22 @@ ul ul{
 }
 ul ul li{
     display: block;
+    
 }
 ul li:hover ul{
     display: block;
     
 }
 nav li a{
-    color: black;
+    color:transparent;
     text-decoration: none;
     
 }
 nav li a:hover{
-    background-color: black;    
+    background-color:transparent;    
     color: gold;
 
 }
-
-
-
-.inicio{
-    
-    background-image: url(../assets/imagenes/pared.png);
-    
-}
-
-.foto{
-    padding: 1rem;
-}
-  
-
 
  
 .discografia{
@@ -174,78 +121,13 @@ nav li a:hover{
 
 h2{
     text-align: center; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color:rgb(255, 0, 13);
-    font-size: xx-large;
+    font-size:large;
     font-weight: bold;
 
 }
 
-/*grid discografia */
-
-
-.discontenedor{
-    max-width: 95%;
-    height: 70vw;
-    margin:20px auto;
-    gap: .5rem;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-   "ab" "ab" 
-   "cd" "cd"
-   "ef" "ef";
-    
- 
-    
-}
-.discontenedor img{
-    width: 250px;
-    height: 250px;
-    
-
-}
-.ab{
-
-    grid-area: a;
-}
-
-.cd{
-
-    grid-area: c;
-}
-
-.ef{
-    grid-area: e;
-}
-
-
-
-
-.menu{
-    list-style-type: none;
-    margin: 10px ;
-    padding: 0.5 rem;
-
-    
-
-    
-}
-.menu li{
-    display: inline;
-    text-align:center;
-    margin: 10px;
-    background-color:silver;
-    padding: 3.5px;
-    color: red;
-
-}
-.menu li a{
-    text-decoration: none;
-    display:inline-box;
-}
 
 { 
     background-image:url(../assets/imagenes/pared.png);
@@ -255,46 +137,15 @@ h2{
     text-align: center;
 }
 
-/*grid videos*/
-
-.mainvideos{
-    background-image: url(../assets/imagenes/pared.png);
-    
+.btn-primary{
+    background-color: gold;
+    color: black;
 }
 
-.videos{
-    max-width: 90%;
-    height: 70vw;
-    margin:20px auto;
-    gap: .5rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-   "ab" "ab" 
-   "cd" "cd"
-   "ef" "ef";
+.btn-primary:hover{
 
-}
-.ab{
-
-    grid-area: a;
-}
-
-.cd{
-
-    grid-area: c;
-}
-
-.ef{
-    grid-area: e;
-}  
-.videos img{
-    width: 500px;
-    height: 300px;
-}
-
-   
+    background-color: red;
+}   
 
 
 
@@ -364,43 +215,9 @@ h2{
 
 
 
-/* media-inicio*/
-
-@media screen and (max-width: 500px){
-    .contenedor{
-    margin:0;    
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;    
-    grid-template-areas: 
-   "header" 
-   "nav"
-   "aside "
-   "main"
-   "footer";
-
-}
-.seccion1{
-    background-color: rgb(43, 43, 157);
-    width: 500px;
-    height: 300px;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    line-height: 3rem;
-    color:white ;
-    overflow: scroll;   
-    flex-direction: row;
-
-    
-    
-}
-
-.seccion2 img{
-    width: 500px;
-    height: 300px;
 
 
-}
+
 @media screen and (max-width: 500px){
 
     .galeria{
@@ -438,82 +255,7 @@ h2{
 
 }
 
-/* media discografia*/
 
-
-@media screen and (max-width: 500px){
-
-    .discontenedor{
-
-    width: 460px;    
-    height: 500px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat (3, 1fr);
-    grid-template-areas: 
-    "ab"
-    "ab"
-    "cd"
-    "cd"
-    "ef" 
-    "ef"
-    }
-    .ab{
-
-        grid-area: a;
-    }
-    
-    .cd{
-    
-        grid-area: c;
-    }
-    
-    .ef{
-        grid-area: e;
-    }
-
-    .discontenedor img{
-        width: 150px;
-        height: 150px;
-    }
-
-
-}
-
-/*media videos*/
-.videos{
-width: 460px;    
-height: 500px;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: repeat (3, 1fr);
-grid-template-areas: 
-"ab"
-"ab"
-"cd"
-"cd"
-"ef" 
-"ef"
-}
-.ab{
-
-    grid-area: a;
-}
-
-.cd{
-
-    grid-area: c;
-}
-
-.ef{
-    grid-area: e;
-}
-
-.videos img{
-    width: 200px;
-    height: 150px;
-}
-
-
-}
 
 
 
